@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Coreprogrm {
     public static void main(String[] args) {
-
-        char ch = 'i';
-
-        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
-            System.out.println(ch + " is vowel");
-        else
-
-            System.out.println(ch + " is consonant");
-
-
+        int x,y,t;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the value of X & Y");
+        x = scanner.nextInt();
+        y = scanner.nextInt();
+        System.out.println("before swapping numbers:" +x+  " "+y);
+        t = x;
+        x = y;
+        y = t;
+        System.out.println("after swapping:" +x+ " " +y);
     }
 }
