@@ -1,18 +1,15 @@
 package com.coreprogrm;
 
-import java.util.Scanner;
+class Coreprogram {
+    private static void printTableOfPowerTwo() {
+        int base = 2;
+        int N = 31;
+        for (int i = 0; i < N; i++) {
+            System.out.println("Power of " + base + "^" + i + " is : " + Math.pow(base, i));
+        }
+    }
 
-public class Coreprogrm {
     public static void main(String[] args) {
-        int n1 = 10, n2 = 20, n3 = 30;
-
-        if (n1 >= n2 && n1 >= n3)
-            System.out.println(n1 + " is the largest number.");
-
-        else if (n2 >= n1 && n2 >= n3)
-            System.out.println(n2 + " is the largest number.");
-
-        else
-            System.out.println(n3 + " is the largest number.");
+        printTableOfPowerTwo();
     }
 }
